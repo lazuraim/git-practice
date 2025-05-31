@@ -24,22 +24,17 @@
 
 `git add .` – добавить все изменённые файлы
 
+![git add](./pics/git_add.png)
+
 `git commit -m "Сообщение коммита"` – зафиксировать изменения с комментарием
+
+![git commit](./pics/git_add.png)
 
 `git commit --amend` – изменить последний коммит (например, добавить файлы или исправить сообщение)
 
+![git amend](./pics/git_amend.png)
 
-
-
-
-
-
-
-
-
-
-
-
+![commit](./pics/commit.png)
 
 
 ## 4. Просмотр истории и изменений
@@ -48,23 +43,53 @@
 
 `git log --oneline` – компактный вывод истории
 
+![one line](./pics/one_line.png)
+
 `git diff` – показать изменения в файлах (ещё не добавленных в индекс)
 
-`git diff --staged` – показать изменения в индексированных файлах
+![git diff](./pics/git_diff.png)
+
+`git diff --staged` – показать изменения в индексированных файлах (после выполнения `git add`)
+
+![git staged](./pics/git_staged.png)
+
+`:wq`- чтобы выйти 
 
 ## 5. Ветки (branches)
 
 `git branch` – список веток
 
+![git branch](./pics/git_branch.png)
+
 `git branch <имя-ветки>` – создать новую ветку
+
+![git branch experiment](./pics/git_branch_experiment.png)
 
 `git checkout <имя-ветки>` – переключиться на ветку
 
+![git checkout](./pics/git_checkout.png)
+
 `git switch <имя-ветки>` – альтернатива checkout (Git 2.23+)
+
+![git switch](./pics/git_switch.png)
 
 `git checkout -b <имя-ветки>` – создать и переключиться на новую ветку
 
+![for merge](./pics/for_merge.png)
+
+Создаем новый файл в ветке for_merge, чтобы позже слить эту ветку с develop, добавив новый файл и закоммиченные изменения в README
+
+![new file](./pics/new_fils.png)
+
+
+
 `git merge <имя-ветки>` – влить изменения из указанной ветки в текущую
+
+
+
+
+
+
 
 `git branch -d <имя-ветки>` – удалить ветку (если изменения уже влиты)
 
